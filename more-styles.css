@@ -150,52 +150,23 @@ section h2 {
 }
 
 header.masthead {
-  position: relative;
   width: 100%;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #555, #111);
-}
-
-header.masthead .header-content {
-  max-width: 500px;
-  margin-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: grey;
+  margin-top: 150px;
   text-align: center;
+  background-color: white;
 }
 
-header.masthead .header-content h1 {
-  font-size: 30px;
-}
 
-header.masthead .device-container {
-  max-width: 325px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-header.masthead .device-container .screen img {
-  border-radius: 3px;
-}
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 100vh;
-    min-height: 775px;
     padding-top: 0;
     padding-bottom: 0;
   }
-  header.masthead .header-content {
-    margin-bottom: 0;
-    text-align: left;
-  }
-  header.masthead .header-content h1 {
-    font-size: 50px;
-  }
-  header.masthead .device-container {
-    max-width: 325px;
-  }
+
 }
 
 section.download {
@@ -370,14 +341,13 @@ section.contact ul.list-social li.social-google-plus a:hover {
 }
 
 footer {
-  padding: 25px 0;
   text-align: center;
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #222222;
+  color: rgba(50, 50, 50, 0.3);
+  background-color: white;
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0;
 }
 
@@ -426,6 +396,16 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.btnSelected {
+  border-color: #fdcc52;
+  background-color: #fdcc52;
+}
+
+.btn:checked {
+  border-color: blue;
+
 }
 
 .btn-xl {
