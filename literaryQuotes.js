@@ -1,17 +1,43 @@
 
 let authorBtns = [];
 
+
 for(let i = 0; i < 3; i++) {
   const btn = document.getElementById(`authorBtn${i+1}`);
   btn.addEventListener('click', () => changeAuthor(i), false);
   authorBtns.push(btn);
 };
 
+
+
+const newQuote = (authorNumber) => {
+  const arr = authorDetails[authorNumber].quotes;
+  return arr[Math.floor(Math.random()*arr.length)];
+}
+
+const updateQuote = (authorNumber) => {
+  const quoteText = document.getElementById("quoteText");
+  const sourceText = document.getElementById("textSource");
+  const quoteObject = newQuote(authorNumber);
+  quoteText.textContent = quoteObject.quote;
+  sourceText.textContent = quoteObject.book;
+}
+
+const randomizeQuote = () => {
+  authorBtns.forEach((item, i) => {
+    const arr = item.getAttribute("class");
+    if (arr.includes("btnSelected")) {
+      updateQuote(i);
+    }
+  });
+}
+
 const changeAuthor = (btnNumber) => {
   // const attr = authorBtns[btnNumber].getAttribute('class');
   deselectAuthors();
   authorBtns[btnNumber].classList.add("btnSelected");
   changeAuthorTitle(btnNumber);
+  updateQuote(btnNumber);
 };
 
 const deselectAuthors = () => {
@@ -28,4 +54,7 @@ const changeAuthorTitle = (btnNumber) => {
 }
 
 changeAuthor(0);
-console.log(authorDetails);
+updateQuote(0);
+
+const randomQuoteBtn = document.getElementById("randomQuoteBtn");
+randomQuoteBtn.addEventListener('click', () => randomizeQuote(), false);
