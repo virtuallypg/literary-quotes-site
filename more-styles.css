@@ -6,6 +6,7 @@ body {
 
 body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  background-color: Ivory;
 }
 
 a {
@@ -39,6 +40,11 @@ h6 {
   letter-spacing: 1px;
 }
 
+h2{
+  font-family: 'Georgia', 'Times', 'serif';
+  color: DarkGrey;
+}
+
 h3{
   color:white;
 }
@@ -54,12 +60,13 @@ section {
 }
 
 section h2 {
-  font-size: 50px;
+  font-size: 28px;
+  padding: 10px;
 }
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: black;
+  background-color: DarkOliveGreen;
   transition: all .35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
@@ -113,7 +120,7 @@ section h2 {
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
-    background-color: black;
+    background-color: DarkOliveGreen;
   }
   #mainNav .navbar-brand {
     color: fade(white, 70%);
@@ -154,9 +161,10 @@ header.masthead {
   padding-top: 0px;
   padding-bottom: 0px;
   color: grey;
-  margin-top: 150px;
+  margin-top: 110px;
+  margin-bottom: -50px;
   text-align: center;
-  background-color: white;
+  background-color: none;
 }
 
 
@@ -343,7 +351,8 @@ section.contact ul.list-social li.social-google-plus a:hover {
 footer {
   text-align: center;
   color: rgba(50, 50, 50, 0.3);
-  background-color: white;
+  background-color: none;
+  padding-bottom: 10px;
 }
 
 footer p {
@@ -399,8 +408,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btnSelected {
-  border-color: #fdcc52;
-  background-color: #fdcc52;
+  border-color: Gold;
+  background-color: Gold;
 }
 
 .btn:checked {
