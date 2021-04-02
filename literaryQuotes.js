@@ -47,10 +47,13 @@ const deselectAuthors = () => {
 }
 
 const changeAuthorTitle = (btnNumber) => {
-  const title = document.getElementById("authorTitle")
+  const title = document.getElementById("authorTitle");
   title.textContent = authorDetails[btnNumber].name;
   const dates = document.getElementById("authorDates")
   dates.textContent = authorDetails[btnNumber].dob;
+  const bioText = document.getElementById("bioText");
+  bioText.textContent = authorDetails[btnNumber].bio;
+
 }
 
 changeAuthor(0);

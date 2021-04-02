@@ -14,6 +14,7 @@
     <script src="author-details.js"></script>
 
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 
@@ -21,7 +22,7 @@
         <!-- <div class="">
           <img src="favicon.ico" class="img-fluid mr-3" alt=""/>
         </div> -->
-        <a class="navbar-brand js-scroll-trigger" style="font-family: 'Lobster Two', 'serif'; font-size: 36px; color: HoneyDew" href="#page-top">Literary Quotes</a>
+        <a class="navbar-brand js-scroll-trigger" style="font-family: 'Lobster Two', 'serif'; font-size: 36px; color: HoneyDew" href="#authors-section">Literary Quotes</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fas fa-bars"></i>
@@ -29,19 +30,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Authors</a>
+              <a class="nav-link js-scroll-trigger" href="#authors-section">Authors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Quotes</a>
+              <a class="nav-link js-scroll-trigger" href="#quotes-section">Quotes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Bios</a>
+              <a class="nav-link js-scroll-trigger" href="#bio-section">Bio</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <header class="masthead">
       <div class="container h-100">
         <h1 style="font-family: 'Georgia', 'serif';" id="authorTitle">Author Name</h1>
@@ -49,8 +49,11 @@
     </div>
     </header>
 
-    <section style="margin-bottom: -100px;">
-      <div class="container">
+    <div id="authors-section"></div>
+
+
+    <section>
+      <div class="container mt-5 mb-5">
         <div class="row">
           <div class="col-lg-4 text-center" >
           <a href=#>  <img src="dickens.jpg" class="btn img-fluid" id="authorBtn1" alt="Charles Dickens"/> </a>
@@ -64,9 +67,9 @@
         </div>
       </div>
     </section>
-
+    <div id="quotes-section"></div>
     <section>
-      <div class="container h-100">
+      <div class="container mbt-5 mb-5">
         <div class="row">
           <div class="col-lg-2 text-center mb-4" >
             <button id="randomQuoteBtn" class="btn btn-outline-secondary active" aria-pressed="true">Random Quote</button>
@@ -83,33 +86,16 @@
     </section>
 
 
+    <div id="bio-section"></div>
 
     <section>
-  <div class="container h-100">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec rutrum nisl, ullamcorper ultrices sapien. Suspendisse felis orci, venenatis sed ex vitae, mollis sollicitudin diam. Nunc condimentum sit amet enim in laoreet. Suspendisse mattis posuere porttitor. Nulla id lacus libero. Mauris magna elit, luctus in facilisis sit amet, elementum sed purus. Nullam euismod libero in metus volutpat condimentum. Nunc venenatis massa at mi vulputate, at rhoncus massa tincidunt. Pellentesque libero lectus, vulputate et elit quis, egestas aliquet nunc.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed dignissim molestie ante, nec vulputate libero finibus at. Nullam augue dui, porttitor id nisi vitae, tincidunt facilisis velit. Sed fringilla ipsum nec ante fringilla tempor. Proin cursus, eros et aliquam efficitur, justo quam cursus ligula, eu tempor quam lorem sit amet ligula. Vivamus sed nibh at mauris tristique porta sit amet vitae lorem. Praesent in lectus aliquam, hendrerit nibh vitae, faucibus diam. Donec ut commodo urna, in vulputate purus. Nullam ultrices orci urna, at fermentum orci laoreet a. In lectus sem, lacinia vel tristique eget, interdum vitae ante. Nulla ullamcorper dictum vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin ac feugiat lacus. Nunc eu magna vel ligula porta lacinia. Donec dapibus risus at porttitor volutpat. Mauris sed finibus dolor.
-
-Nulla non nulla bibendum, posuere sapien id, consectetur sem. Ut cursus faucibus libero, at ultrices libero blandit at. In non risus ex. Nullam aliquam malesuada dignissim. Praesent eleifend nunc a hendrerit sagittis. Nullam metus nulla, hendrerit quis condimentum vel, feugiat tristique ante. Aenean eget dui scelerisque, euismod tortor pharetra, euismod diam. Aenean nibh metus, semper sed eros id, rutrum vehicula odio. Integer ac tellus odio. Nunc bibendum enim in enim malesuada, rutrum bibendum turpis auctor. Vivamus auctor elit sit amet turpis faucibus, vitae placerat lacus tincidunt. Nunc at ante felis. In eu erat a elit laoreet ullamcorper. Sed vitae rutrum leo, vel finibus lacus.
-
-Nam posuere sem augue, vitae tincidunt libero mattis blandit. Cras gravida porttitor ex vitae pellentesque. Duis nunc urna, feugiat eget viverra vitae, congue nec elit. Phasellus condimentum elit non efficitur dapibus. Nullam nec aliquet turpis. Nam porttitor in massa eget tincidunt. Sed vehicula porta lacus, quis feugiat nulla varius et. Nam ante metus, tincidunt ut pellentesque porttitor, dignissim ut nisl. Curabitur ut interdum nibh. Aliquam sit amet est eget eros iaculis elementum. Mauris interdum interdum justo, sed venenatis est auctor non. Praesent at mattis arcu.
-
-Nullam nulla nisl, pretium feugiat mi sit amet, lobortis lobortis elit. In at mauris a lectus luctus mollis. Nunc id augue in turpis interdum mattis. Nam scelerisque lacus at tellus sagittis, a pharetra massa sodales. Aliquam ullamcorper facilisis molestie. Vivamus sed facilisis diam, quis faucibus sapien. Mauris varius risus eu posuere hendrerit. Praesent pulvinar mollis accumsan. Morbi ut elit vitae est tempus gravida. Etiam malesuada porttitor quam sed ornare. Vestibulum id odio mollis, venenatis nunc rhoncus, rhoncus ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam tristique auctor arcu, sed suscipit metus hendrerit ac.
-
-Fusce efficitur purus at ante cursus, scelerisque interdum eros elementum. Pellentesque eleifend maximus nunc eget volutpat. Nullam efficitur posuere scelerisque. Morbi ex ipsum, vestibulum eget diam eget, pellentesque suscipit dolor. In tincidunt, mauris a gravida condimentum, turpis mi congue leo, eu cursus dui nibh in ipsum. Mauris cursus arcu eu justo pharetra laoreet. Nam in pharetra ante, non sollicitudin lacus. Morbi vehicula a nibh eget vestibulum.
-
-Aenean venenatis malesuada dolor, ullamcorper vestibulum neque ullamcorper semper. Cras facilisis accumsan dolor, sed commodo odio molestie sit amet. Pellentesque enim risus, egestas in dignissim efficitur, tincidunt in felis. Quisque vulputate nisi a turpis maximus ultricies. Cras placerat urna quis nunc vehicula, nec ultricies ex posuere. Pellentesque consectetur hendrerit lectus. Mauris dapibus dui libero, eget egestas nisi ornare in. Nulla ut nunc arcu. Nulla condimentum euismod sem sed vulputate. Donec ac malesuada risus. Nunc congue bibendum mauris id tincidunt.
-
-Suspendisse potenti. Aenean commodo sollicitudin malesuada. Phasellus consectetur dolor nec turpis viverra, vel semper mi pretium. Etiam sed accumsan elit. Vivamus pretium fringilla condimentum. Quisque fermentum sapien nibh, id ullamcorper dui molestie eu. Maecenas nec mattis risus. Donec non sollicitudin sapien, ut luctus ligula. Vivamus vestibulum, sapien at accumsan elementum, justo purus commodo velit, ut tincidunt mauris ipsum vel ex.
-
-Praesent libero ipsum, sollicitudin ut libero eu, ultricies luctus ex. Integer fermentum ex sit amet quam vehicula, id tempus lorem lacinia. In maximus iaculis volutpat. Aliquam dapibus rhoncus mollis. Nam iaculis arcu est, pretium hendrerit urna molestie nec. Proin efficitur maximus venenatis. Mauris pretium dictum mollis. Integer luctus ligula at fringilla luctus. Vestibulum quis eleifend est. Nam nec volutpat metus, non maximus turpis. Phasellus ut varius odio, non placerat magna. Sed nec ante id purus fermentum suscipit a non nunc. Etiam a metus erat. In id nunc at turpis maximus faucibus.
-
-Nulla et elit vestibulum, semper nunc sed, iaculis nisl. Maecenas scelerisque tincidunt vulputate. Sed hendrerit purus rutrum, accumsan tortor a, volutpat est. Aenean dui erat, congue sodales tellus at, bibendum imperdiet magna. Proin et euismod mi, in varius neque. Proin malesuada ex sagittis hendrerit dignissim. Quisque ut lobortis nibh. Vestibulum sed metus eu dui venenatis lacinia eget ac enim. Vestibulum ac eros dignissim, pulvinar tortor sed, rutrum tellus. Fusce tempor, orci quis malesuada tincidunt, diam arcu posuere urna, sed venenatis eros erat quis nibh. Curabitur placerat odio purus, a suscipit sem feugiat at. Aliquam dictum congue placerat. Donec id facilisis eros.
-
-Duis non consequat ligula, sed euismod felis. Donec faucibus fermentum volutpat. Aliquam bibendum faucibus lectus et scelerisque. Donec a condimentum tellus. Nam quis leo ac erat porta dictum. Quisque elit sem, posuere vitae diam vel, tincidunt lacinia metus. Nam feugiat felis lacus, non vehicula nisl laoreet et. In suscipit leo neque, in congue justo imperdiet ut. Vestibulum nunc nisi, varius sit amet pulvinar sed, posuere at dui. Nunc ullamcorper pellentesque pellentesque. Proin sed lacus eros. Quisque id mauris id turpis dignissim sagittis at vel turpis. Fusce pulvinar gravida ornare. Morbi lacus ipsum, ornare efficitur ultricies a.
-    </p>
-
+      <div class="container bg-light rounded">
+        <h2 class="text-center">Biography</h2>
+        <p class="text-secondary" id="bioText">
+          My Bio
+        </p>
+      </div>
+    </section>
 
 
 

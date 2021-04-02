@@ -56,12 +56,25 @@ p {
 }
 
 section {
-  padding: 100px 0;
+  padding: 20px 0;
 }
 
 section h2 {
   font-size: 28px;
   padding: 10px;
+}
+
+#authors-section {
+  position: absolute;
+  top: 0;
+}
+
+#quotes-section {
+  transform: translateY(-80px);
+}
+
+#bio-section {
+  transform: translateY(-80px);
 }
 
 #mainNav {
